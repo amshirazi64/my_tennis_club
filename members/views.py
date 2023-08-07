@@ -20,13 +20,12 @@ def details(request, id):
     return HttpResponse(template.render(contex, request))
 
 def main(request):
-  template = loader.get_template('main.html')
-  return HttpResponse(template.render())
+    template = loader.get_template('main.html')
+    return HttpResponse(template.render())
 
 def testing(request):
-  mydata = Member.objects.all()
-  template = loader.get_template('template.html')
-  context = {
-    'mymembers': mydata,
-  }
-  return HttpResponse(template.render(context, request))
+    template = loader.get_template('template.html')
+    context = {
+        'fruits': ['Apple', 'Banana', 'Cherry'],
+    }
+    return HttpResponse(template.render(context, request))
