@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-7uq3j2!5cabe-7vs8m2*ny1-60va(w=#!2&i5g@zvi28h0f8w&'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'my_tennis_club.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'amshirazi64',
-        'PASSWORD': 'WMCl1LhbweJ2',
-        'HOST': 'ep-spring-frog-92168711.eu-central-1.aws.neon.tech',
-        'PORT': '5432'
+        'NAME': 'database name',
+        'USER': 'username',
+        'PASSWORD': 'password',
+        'HOST': 'host',
+        'PORT': 'port'
     }
 }
 
